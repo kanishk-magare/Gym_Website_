@@ -1,0 +1,528 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .logo {
+    width: 80px;
+}
+
+.common {
+    color: white;
+    font-weight: 900;
+}
+
+#p1 {
+    position: absolute;
+    left: 180px;
+    top: 55px;
+}
+
+#p2 {
+    position: absolute;
+    left: 160px;
+    top: 70px;
+}
+#home ul{
+    list-style: none;
+}
+#home ul li{
+    display: inline-block;
+    margin: 10px 0;
+}
+#home ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 0 px;
+    padding: 10px 25px;
+    position: relative;
+}
+#home ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #00ffee;
+    z-index: -1;
+    box-shadow: 0 0 10px white,
+                0 0 20px white,
+                0 0 40px white,
+                0 0 80px white,
+                0 0 100px white;
+    transition: 0.25s;
+}
+#home ul li a:hover::before{
+    width: 100%;
+}
+
+
+
+.content {
+    text-align: center;
+    position: relative;
+    /* border: 1px solid white; */
+    left: 5%;
+
+}
+
+.content h1 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    border: 2px solid white;
+    padding: 10px 12px;
+    /* border-radius: 50px; */
+    margin-top: 20px;
+
+}
+
+.content a:hover {
+    background-color: aliceblue;
+    color: black;
+    transition: 0.8s;
+}
+
+.back-video {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+@media(min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+#page2 {
+    height: 100vh;
+    width: 99vw;
+    float: left;
+    left: 0;
+    /* left: -397px; */
+    position: absolute;
+    top: 600px;
+    background-image: url(./images/blackbg.jpg);
+    background-size: cover;
+
+}
+
+#page2 #left {
+    height: 70px;
+    position: absolute;
+    left: 58px;
+    top: 80px;
+    ;
+
+}
+
+#page2 #right {
+    width: 45%;
+    float: right;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+
+}
+
+#page2 h2 {
+    position: absolute;
+    top: 110px;
+    left: 170px;
+    color: white;
+    letter-spacing: 3px;
+    /* font-weight: 0; */
+    font-size: 30px;
+    font-family: 'Russo One', sans-serif;
+}
+
+#page2 p {
+    color: white;
+    font-size: 18px;
+    width: 500px;
+    position: absolute;
+    top: 210px;
+    left: 70px;
+    line-height: 1.8;
+    letter-spacing: 0.2;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#page3 {
+    position: absolute;
+    top: 1217px;
+    height: 80vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url(./images/blackbg.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#page3 #trainer {
+    width: 40%;
+    height: auto;
+}
+
+#page3 #biceps {
+    position: absolute;
+    top: 55px;
+    left: 650px;
+}
+
+#page3 h1 {
+    color: white;
+    position: absolute;
+    top: 60px;
+    letter-spacing: 3px;
+    font-family: 'Russo One', sans-serif;
+    left: 750px;
+}
+
+#page3 .first-para {
+    color: white;
+    width: 490px;
+    top: 160px;
+    left: 660px;
+    font-size: 18px;
+    font-family: 'Archivo Black', sans-serif;
+    line-height: 1.4;
+}
+
+#page3 #p2 {
+    top: 340px;
+}
+
+#page4 {
+    height: 130vh;
+    width: 99vw;
+    float: left;
+    left: 0;
+    /* left: -397px; */
+    position: absolute;
+    top: 1700px;
+    background-image: url(./images/whitebg.jpg);
+    background-size: cover;
+}
+
+#page4 #container {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 150px;
+    left: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+}
+
+#page4 h1 {
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+#page4 h2 {
+    color: grey;
+    letter-spacing: 2px;
+
+}
+
+.social {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 300px;
+    left: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.social ul {
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+.social ul li .fa-brands {
+    color: #000000;
+    font-size: 30px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social ul li .fa-brands:hover {
+    color: #ffffff;
+}
+.social ul li a {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.5);
+}
+.social ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+/* .social ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+} */
+.social ul li:nth-child(3) a:hover {
+    background-color: #cd201f;
+}
+.social ul li:nth-child(4) a:hover {
+    background-color: #0077B5;
+}
+
+
+
+.images {
+    position: relative;
+    top: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#corner img {
+    height: 300px;
+    width: 1350px;
+    position: relative;
+    top: 480px;
+}
+
+#crnrCont {
+    /* border: 1px solid red; */
+    color: white;
+    position: absolute;
+    top: 850px;
+    left: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+}
+
+#crnrCont>h1 {
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.btn a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    padding: 10px 12px;
+    /* border-radius: 50px; */
+    margin-top: 20px;
+
+}
+
+.btn a:hover {
+    background-color: aliceblue;
+    color: black;
+    transition: 0.8s;
+}
+
+#page5 {
+    height: 90vh;
+    width: 99vw;
+    float: left;
+    left: 0;
+    /* left: -397px; */
+    position: absolute;
+    top: 2738px;
+    background-image: url(./images/blackbg.jpg);
+    z-index: -1;
+    background-size: cover;
+}
+
+footer .logo {
+    width: 130px;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+#shape{
+     width: 250px;
+    position: absolute;
+    top: 180px;
+    left: 115px;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.club {
+    color: white;
+    font-weight: 900;
+}
+
+#p3 {
+    position: absolute;
+    left: 178px;
+    top: 115px;
+    font-size: 20px;
+}
+
+#p4 {
+    position: absolute;
+    left: 151px;
+    top: 135px;
+    font-size: 20px;
+}
+
+#heading {
+    height: 100px;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 2850px;
+    left: 450px;
+}
+
+#heading .head {
+    color: white;
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+#contet-membership {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 2912px;
+    left: 450px;
+}
+
+#contet-membership p {
+    color: white;
+    font-size: 17px;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1.8px;
+}
+
+#contet-Trainers {
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 2900px;
+    left: 755px;
+}
+
+#contet-Trainers p {
+    color: white;
+    font-size: 17px;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1.8px;
+}
+
+#contet-popular {
+    height: 240px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 2910px;
+    left: 985px;
+}
+
+#contet-popular p {
+    color: white;
+    font-size: 17px;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1.8px;
+}
+#end{
+    color: white;
+    font-size: 17px;
+    top: 2910px;
+    position: absolute;
+    top: 3210px;
+    left: 100px;
+    letter-spacing: 1.4px;
+}
